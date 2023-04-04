@@ -19,6 +19,9 @@ const Project_component = ({ data }) => {
             </div>
             <div className="info-data">{data.title}</div>
             <div className="info-data">{data.desc}</div>
+            <a href={data.code} target="_blank">
+              <p>Code</p>
+            </a>
           </div>
         );
       })}
