@@ -1,0 +1,12 @@
+.App {
+  height: 100vh;
+
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; /* This is needed to enable scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.App::-webkit-scrollbar {
+  display: none;
+}
