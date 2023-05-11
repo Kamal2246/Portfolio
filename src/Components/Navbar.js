@@ -1,4 +1,5 @@
 import React from "react";
+import "./Components.css";
 
 const Navbartop = ({ func }) => {
   return (
@@ -6,7 +7,7 @@ const Navbartop = ({ func }) => {
       <div className="left-head">
         <div className="logo">
           <a href="#" onClick={() => window.location.reload()}>
-            <img src={"/Images/logo.png"} alt="logo" />
+            <img src={"/Images/home.png"} alt="logo" />
           </a>
         </div>
         <div className="Nav-links">

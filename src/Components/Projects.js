@@ -12,11 +12,13 @@ const items = [
 ];
 const fullStack = [
   {
-    pic: "/Images/sorting.PNG",
+    pic: "/Images/airbnb.PNG",
     url: "/airbnb/index.html",
     title: "AirBnb Clone",
-    desc: "Still Need hosting",
+    desc: "MERN Stack Implementation",
     code: "https://github.com/Kamal2246/startbootstrap-modern-business",
+    link: "https://clonefrontend.netlify.app",
+    backlink: "https://clonebackend-nzwz.onrender.com/",
   },
 ];
 const react = [];
@@ -25,21 +27,23 @@ const misc = [];
 const js = [
   {
     pic: "/Images/sorting.PNG",
-    url: "/sorting/home.html",
+    link: "/sorting/home.html",
     title: "Sorting Project",
+    code: "https://github.com/Kamal2246/Portfolio/tree/main/public",
     desc: "Basic Sorting Algorithms Visualization",
   },
 ];
 const css = [
   {
     pic: "/Images/cssporject1.PNG",
-    url: "/css_project-2/home.html",
+    link: "/css_project-2/home.html",
+    code: "https://github.com/Kamal2246/Portfolio/tree/main/public",
     title: "CSS Project 1",
     desc: "Simple Css project without any functionality",
   },
 ];
 const Projects = () => {
-  const [object, setObject] = React.useState(items[0]);
+  const [object, setObject] = React.useState(null);
 
   return (
     <section className="Projects">
@@ -59,6 +63,7 @@ const Projects = () => {
         })}
       </div>
       <div className="left-project-div">
+        {!object && <h2>Select the Project you want to see</h2>}
         {object === items[0] && <Project_component data={fullStack} />}
         {object === items[1] && <Project_component data={js} />}
         {object === items[2] && <Project_component data={css} />}

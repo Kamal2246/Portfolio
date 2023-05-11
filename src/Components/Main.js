@@ -5,6 +5,7 @@ import "./Components.css";
 import Navbartop from "./Navbar";
 import Cubepics from "./Cubepics";
 import * as THREE from "three";
+import Sphereblob from "./Sphereblob";
 
 const Main = ({ func }) => {
   const [textures, setTextures] = React.useState([]);
@@ -42,17 +43,31 @@ const Main = ({ func }) => {
           </div>
         </div>
         <div className="left-div">
-          <Canvas camera={{ fov: 75, position: [0, 0, 4] }}>
-            <OrbitControls
-              enableZoom={false}
-              autoRotate
-              autoRotateSpeed={5}
-              rotation={[Math.PI / 4, Math.PI / 4, Math.PI / 4]}
-            />
-            <ambientLight intensity={0.2} />
-            <directionalLight position={(3, 2, 1)} />
-            <Cubepics textures={textures} />
-          </Canvas>
+          <div className="skills-images">
+            <img src={"Images/mdb.png"}></img>
+            <img src={"Images/express.png"} style={{ width: "40%" }}></img>
+            <img src={"Images/react2.png"}></img>
+            <img src={"Images/node.png"} style={{ width: "25%" }}></img>
+            <img src={"Images/python.png"}></img>
+            <img src={"Images/django.png"} style={{ width: "35%" }}></img>
+            <img src={"Images/html.png"} style={{ width: "35%" }}></img>
+            <img src={"Images/git.png"}></img>
+            <img src={"Images/github.png"}></img>
+          </div>
+          <div className="sphere">
+            <Canvas camera={{ fov: 75, position: [0, 0, 4] }}>
+              <OrbitControls
+                enableZoom={false}
+                autoRotate
+                autoRotateSpeed={5}
+                rotation={[Math.PI / 4, Math.PI / 4, Math.PI / 4]}
+              />
+              <ambientLight intensity={0.2} />
+              <directionalLight position={(3, 2, 1)} />
+              {/* <Cubepics textures={textures} /> */}
+              <Sphereblob />
+            </Canvas>
+          </div>
         </div>
       </div>
     </section>

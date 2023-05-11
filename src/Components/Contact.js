@@ -46,7 +46,7 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              name="from_name"
+              name="Name"
               {...register("Name", { required: true })}
               onBlur={() => trigger("Name")}
             />

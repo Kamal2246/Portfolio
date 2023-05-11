@@ -2,6 +2,22 @@ import React from "react";
 import "./Components.css";
 
 const Project_component = ({ data }) => {
+  React.useEffect(() => {
+    const openLinkInNewTab = () => {
+      const newTab = window.open(
+        "https://clonebackend-nzwz.onrender.com/",
+        "_blank"
+      );
+      setTimeout(() => newTab.close(), 1000);
+    };
+
+    const link = document.getElementById("myLink");
+    link && link.addEventListener("click", openLinkInNewTab);
+
+    return () =>
+      link ? link.removeEventListener("click", openLinkInNewTab) : "";
+  }, []);
+
   return (
     <div className="Cards-Container">
       {data.length ? (
@@ -13,15 +29,24 @@ const Project_component = ({ data }) => {
         return (
           <div className="Cards">
             <div className="info-pic">
-              <a href={data.url} target="_blank">
-                <img src={data.pic} alt={data.title} />
+              <img src={data.pic} alt={data.title} />
+            </div>
+            <div className="project-title">
+              <a href={data.link} className="projectlink" target="_blank">
+                {data.title}
+              </a>
+              <a href={data.code} className="gitlink" target="_blank">
+                Git Repo
               </a>
             </div>
-            <div className="info-data">{data.title}</div>
-            <div className="info-data">{data.desc}</div>
-            <a href={data.code} target="_blank">
-              <p>Code</p>
-            </a>
+            <div className="project-desc">{data.desc}</div>
+
+            {data.backlink && (
+              <div className="project-desc">
+                <span id="myLink">Click Here....</span>
+                if content is not Loading
+              </div>
+            )}
           </div>
         );
       })}

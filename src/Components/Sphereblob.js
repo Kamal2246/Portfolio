@@ -6,7 +6,7 @@ const Sphereblob = () => {
     <mesh>
       <Sphere args={[1, 100, 200]} scale={2.2}>
         <MeshDistortMaterial
-          color="#ff4500"
+          color="#ffff66"
           attach="material"
           distort={0.4}
           speed={2.5}
