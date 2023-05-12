@@ -8,7 +8,7 @@ const Project_component = ({ data }) => {
         "https://clonebackend-nzwz.onrender.com/",
         "_blank"
       );
-      setTimeout(() => newTab.close(), 1000);
+      setTimeout(() => newTab.close(), 4000);
     };
 
     const link = document.getElementById("myLink");
