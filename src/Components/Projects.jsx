@@ -21,7 +21,6 @@ const fullStack = [
           <li>Posting Ads</li>
           <li>Booking</li>
         </ul>
-        HOSTINGS :<p>Frontend on Netlify, Backend on Render</p>
       </div>
     ),
   },

@@ -34,3 +34,17 @@
   background-color: rgb(48, 163, 123);
   opacity: 50%;
 }
+@media only screen and (max-width: 600px) {
+  .certicards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    gap: 1vw;
+  }
+  .certis {
+    height: 20vh;
+    width: 70vw;
+  }
+}

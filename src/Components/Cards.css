@@ -100,3 +100,35 @@
 .cards:hover .Info {
   opacity: 100%;
 }
+@media only screen and (max-width: 600px) {
+  .cards {
+    min-width: 25vw;
+    max-width: 50vw;
+    min-height: 10vh;
+    max-height: 20vh;
+    border-radius: 20px;
+  }
+  .desc {
+    font-size: smaller;
+  }
+  .Info {
+    bottom: 1px;
+    left: 3px;
+    padding: 0%;
+    overflow: hidden;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40vh;
+  }
+
+  .url,
+  .gitrepo,
+  .bendcode {
+    width: 70%;
+    font-size: small;
+  }
+}

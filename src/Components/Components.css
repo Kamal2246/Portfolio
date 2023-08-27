@@ -249,14 +249,16 @@ a {
     background-color: rgb(252, 53, 18);
   }
 }
+
 .left-project-div {
   display: flex;
   flex: 2;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   gap: 5px;
 }
+
 .right-project-div {
   display: flex;
   justify-content: center;
@@ -519,6 +521,9 @@ form p {
     padding-left: 0.5vh;
     padding-right: 0.5vh;
     min-width: 7vh;
+  }
+  .Nav-links {
+    font-size: small;
   }
   .Main-div {
     flex-direction: column;
