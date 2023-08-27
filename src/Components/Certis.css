@@ -1,0 +1,36 @@
+.certicards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vw;
+  margin-top: 5vw;
+  background-color: rgb(197, 197, 218);
+  width: 95vw;
+  height: 80vh;
+  border-radius: 5%;
+  padding: 2vh;
+  gap: 5vw;
+}
+
+.certis {
+  position: relative;
+  background-color: rgb(212, 167, 167);
+  border-radius: 5%;
+  height: 40vh;
+  width: 40vw;
+}
+.verify {
+  background-color: rgb(120, 158, 145);
+  opacity: 0%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verify:hover {
+  background-color: rgb(48, 163, 123);
+  opacity: 50%;
+}
