@@ -13,7 +13,7 @@ const fullStack = [
     bcode: "https://github.com/Kamal2246/AirbnbCloneBackend",
     link: "https://clonefrontend.netlify.app",
     backlink: "https://clonebackend-nzwz.onrender.com/",
-    desc: (
+    descrip: (
       <div>
         Airbnb Clone:
         <ul>
@@ -32,7 +32,7 @@ const da = [
     name: "Notebook",
     code: "https://www.kaggle.com/code/kds4622/customer-analysis-fmcg",
     link: "https://www.kaggle.com/code/kds4622/customer-analysis-fmcg",
-    desc: (
+    descrip: (
       <div>
         FMCG Customer Analysis:
         <ul>
@@ -51,7 +51,7 @@ const js = [
     link: "/sorting/home.html",
     title: "Sorting Project",
     code: "https://github.com/Kamal2246/Portfolio/tree/main/public",
-    desc: "Basic Sorting Algorithms Visualization",
+    descrip: "Basic Sorting Algorithms Visualization",
   },
 ];
 

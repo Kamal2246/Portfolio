@@ -17,7 +17,7 @@ const Cards = ({ data }) => {
         }}
       >
         {" "}
-        <div className="desc">{data.desc}</div>
+        <div className="desc">{data.descrip}</div>
         <div className="Info">
           <div className="links">
             <div className="url">
